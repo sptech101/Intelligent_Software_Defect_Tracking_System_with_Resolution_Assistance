@@ -4,15 +4,16 @@ An interactive Streamlit dashboard for analyzing software bugs, tracking defect 
 # Project Overview
 The Enterprise Bug Analytics Dashboard is an interactive data analytics application developed using Python and Streamlit. It analyzes software bug records across modules, sprints, releases, priorities, resolutions, root causes, and lifecycle stages. The dashboard provides interactive filters, KPI monitoring, advanced visualizations, and actionable insights to support QA teams, developers, team leads, and project managers.
 # Project Objectives
-Analyze software bug records interactively.
-Monitor important software-quality KPIs.
-Track bug lifecycle and resolution trends.
-Analyze sprint-wise and module-wise defects.
-Identify high-risk modules and critical bugs.
-Analyze root causes and resolutions.
-Monitor SLA and resolution performance.
-Generate actionable project insights.
-Support data-driven software quality decisions.
+- Analyze software bug records interactively.
+- Monitor important software-quality KPIs.
+- Track bug lifecycle and resolution trends.
+- Analyze sprint-wise and module-wise defects.
+- Identify high-risk modules and critical bugs.
+- Analyze root causes and resolutions.
+- Monitor SLA and resolution performance.
+- Generate actionable project insights.
+- Support data-driven software quality decisions.
+
 # 🚀 Key Features
 
 - 📊 Interactive KPI Dashboard
