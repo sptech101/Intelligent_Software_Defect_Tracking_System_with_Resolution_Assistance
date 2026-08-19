@@ -99,87 +99,8 @@ The dashboard monitors:
                      │
                      ▼
             Decision Support
-# System Architecture
-┌──────────────────────────────────────────────┐
-│              BUG DATASET (CSV)               │
-│                                              │
-│ Bug ID | Sprint | Module | Priority | Status │
-│ Resolution | Root Cause | Team | Dates ...   │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│            DATA PREPROCESSING                │
-│                                              │
-│ • Missing Value Handling                     │
-│ • Duplicate Detection                        │
-│ • Data Type Conversion                       │
-│ • Date Processing                            │
-│ • Feature Engineering                        │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│              CLEAN DATAFRAME                 │
-│                                              │
-│       Pandas DataFrame for Analysis          │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│             INTERACTIVE FILTERS              │
-│                                              │
-│ Release | Sprint | Module | Priority | Status│
-└──────────────────────┬───────────────────────┘
-                       │
-              ┌────────┴────────┐
-              ▼                 ▼
-┌──────────────────────┐ ┌─────────────────────┐
-│    KPI ENGINE        │ │ VISUALIZATION       │
-│                      │ │ ENGINE              │
-│ • Total Bugs         │ │ • Funnel            │
-│ • Open Bugs          │ │ • Heatmap           │
-│ • Closed Bugs        │ │ • Sunburst          │
-│ • Critical Bugs      │ │ • Treemap           │
-│ • Avg Resolution     │ │ • Bubble            │
-│ • Closure Rate       │ │ • Radar             │
-│ • SLA                │ │ • Gauge             │
-│ • Defect Density     │ │ • Sankey            │
-└──────────┬───────────┘ └──────────┬──────────┘
-           │                        │
-           └────────────┬───────────┘
-                        ▼
-┌──────────────────────────────────────────────┐
-│            STREAMLIT DASHBOARD               │
-│                                              │
-│ KPI Cards | Charts | Tables | Insights       │
-└──────────────────────┬───────────────────────┘
-                       │
-                       ▼
-┌──────────────────────────────────────────────┐
-│              DECISION SUPPORT                │
-│                                              │
-│ QA Engineers | Developers | Team Leads       │
-│ Project Managers | Management                │
-└──────────────────────────────────────────────┘
-# 📂 Project Structure
 
-``text
-Enterprise-Bug-Analytics/
-│
-├── app.py
-├── dashboard.py
-├── preprocessing.py
-├── kpi.py
-├── styles.py
-├── requirements.txt
-├── Bug_Life_Cycle_Managementreport.csv
-├── images/
-│   ├── dashboard_overview.png
-│   ├── system_architecture.png
-│   └── workflow.png
-└── README.md
-explain each file briefly:
+# 📂 Project Structure
 
 | File | Description |
 |---|---|
